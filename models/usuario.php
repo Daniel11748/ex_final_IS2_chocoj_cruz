@@ -22,7 +22,7 @@ class usuario extends Conexion
 
     public function guardar()
     {
-        $sql = "INSERT INTO userentes (user_nombre, user_telefono, user_correo) values ('$this->user_nombre','$this->user_telefono', '$this->user_correo')";
+        $sql = "INSERT INTO usuarios (user_nombre, user_telefono, user_correo) values ('$this->user_nombre','$this->user_telefono', '$this->user_correo')";
          echo  json_encode($sql); 
         $resultado = self::ejecutar($sql);
         return $resultado;
